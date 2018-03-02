@@ -6,7 +6,8 @@ import { HttpModule } from '@angular/http';
 
 import { APP_ROUTING } from './app.routing';
 
-import { HomeComponent } from './route/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
+import { TopMenuComponent } from './shared/layouts/topmenu/topmenu.component';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './route/home/home.component';
     ],
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        TopMenuComponent
     ],
     bootstrap: [
         AppComponent

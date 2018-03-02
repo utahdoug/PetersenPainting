@@ -58,6 +58,17 @@ module.exports = {
             /angular(\\|\/)core(\\|\/)@angular/,
             helpers.root('src'),
             {}
-        )
+        ),
+
+        new webpack.ContextReplacementPlugin(
+            // The (\\|\/) piece accounts for path separators in *nix and Windows
+          
+            // For Angular 5, see also https://github.com/angular/angular/issues/20357#issuecomment-343683491
+            /\@angular(\\|\/)core(\\|\/)esm5/,
+            helpers.root('src'), // location of your src
+            {
+              // your Angular Async Route paths relative to this root directory
+            }
+          )
     ]
 };

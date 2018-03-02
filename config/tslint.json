@@ -7,7 +7,7 @@
                   true,
                   "attribute",
                   [
-                        "tyn"
+
                   ],
                   "camelCase"
             ],
@@ -15,7 +15,7 @@
                   true,
                   "element",
                   [
-                        "tyn"
+                       
                   ],
                   "kebab-case"
             ],
@@ -26,6 +26,7 @@
             "no-input-rename": true,
             "no-output-rename": true,
             "no-forward-ref": true,
+            "quotemark": [true, "single", "avoid-escape"],
             "use-life-cycle-interface": true,
             "use-pipe-transform-interface": true,
             "component-class-suffix": [
@@ -36,9 +37,6 @@
                   true,
                   "Directive"
             ],
-            "import-destructuring-spacing": true,
-            "templates-use-public": true,
-            "no-access-missing-member": true,
-            "invoke-injectable": true
+            "import-destructuring-spacing": true
       }
 }
