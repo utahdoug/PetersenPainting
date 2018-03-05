@@ -1,0 +1,52 @@
+<div class="alert alert-info alert-sm" role="alert">
+    Job Calendar
+</div>
+
+<div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <button class="btn btn-primary btn-sm" type="button" (click)="changeMonth(-1)">
+                <span class="fa fa-chevron-circle-left"></span>
+                Previous Month
+            </button>
+        </div>
+        <div class="col col-lg-4 text-center">
+            <div class="alert alert-warning alert-sm text-bold">
+                {{timeDisplay}}
+            </div>
+        </div>
+        <div class="col col-lg-2 text-right">
+            <button class="btn btn-primary btn-sm" type="button" (click)="changeMonth(1)">
+                Next Month
+                <span class="fa fa-chevron-circle-right"></span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <table class="table-bordered" style="width: 100%;">
+        <tr>
+            <th class="cal-day-width">Sun</th>
+            <th class="cal-day-width">Mon</th>
+            <th class="cal-day-width">Tue</th>
+            <th class="cal-day-width">Wed</th>
+            <th class="cal-day-width">Thu</th>
+            <th class="cal-day-width">Fri</th>
+            <th class="cal-day-width">Sat</th>
+        </tr>
+        <!-- <tr ng-repeat="weeks in calendar">
+            <td ng-repeat="day in weeks" style="max-width: 150px;">
+                <div class="background-warning text-bold">{{day.day}}</div>
+
+                <div ng-if="day.day>0" style="overflow: auto; height: 130px;">
+
+                    <div ng-repeat='t in taskCounts[day.keyDate]'>
+                        <div class="{{t.class}}">
+                            <span style="cursor: pointer;" ng-click="goToJob(day.keyDate, $index)">{{t.department_name}} tasks: ({{t.cnt}})</span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr> -->
+    </table>
+</div>

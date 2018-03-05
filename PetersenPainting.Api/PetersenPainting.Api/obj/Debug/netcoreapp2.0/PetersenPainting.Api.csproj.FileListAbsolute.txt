@@ -1,0 +1,11 @@
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\bin\Debug\netcoreapp2.0\PetersenPainting.Api.deps.json
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\bin\Debug\netcoreapp2.0\PetersenPainting.Api.runtimeconfig.json
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\bin\Debug\netcoreapp2.0\PetersenPainting.Api.runtimeconfig.dev.json
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\bin\Debug\netcoreapp2.0\PetersenPainting.Api.dll
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\bin\Debug\netcoreapp2.0\PetersenPainting.Api.pdb
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.csprojResolveAssemblyReference.cache
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.csproj.CoreCompileInputs.cache
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.AssemblyInfoInputs.cache
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.AssemblyInfo.cs
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.dll
+C:\dev\petersenpainting\PetersenPainting.Api\PetersenPainting.Api\obj\Debug\netcoreapp2.0\PetersenPainting.Api.pdb

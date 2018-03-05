@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MomentModule } from 'angular2-moment';
 
 import { APP_ROUTING } from './app.routing';
 
@@ -15,7 +16,8 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
         BrowserModule,
         FormsModule,
         HttpModule,
-        APP_ROUTING
+        APP_ROUTING,
+        MomentModule
     ],
     declarations: [
         AppComponent,
