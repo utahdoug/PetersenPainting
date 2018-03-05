@@ -8,6 +8,7 @@ import { APP_ROUTING } from './app.routing';
 
 import { HomeComponent } from './pages/home/home.component';
 import { TopMenuComponent } from './shared/layouts/topmenu/topmenu.component';
+import { CalendarComponent } from './shared/calendar/calendar.component';
 
 @NgModule({
     imports: [
@@ -19,10 +20,11 @@ import { TopMenuComponent } from './shared/layouts/topmenu/topmenu.component';
     declarations: [
         AppComponent,
         HomeComponent,
-        TopMenuComponent
+        TopMenuComponent,
+        CalendarComponent
     ],
     bootstrap: [
         AppComponent
-    ]
+    ]   
 })
 export class AppModule {}

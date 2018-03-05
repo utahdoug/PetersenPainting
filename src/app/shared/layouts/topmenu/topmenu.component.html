@@ -35,241 +35,200 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarReportsDropdown">
                     <!-- <?if(!in_array($role, [3,7])){?> -->
-                        <a class="dropdown-item" href="utah/app/jobs/jobView.php?pval=1">
-                            Job Report</a>
+                    <a class="dropdown-item" href="utah/app/jobs/jobView.php?pval=1">
+                        Job Report</a>
                     <!-- <? }?> -->
                     <div class="dropdown-divider"></div>
                     <!-- <?if($role<3){?> -->
-                        <a class="dropdown-item" href="utah/app/reports/dailySheetReport.php">
-                            Daily Sheet Report</a>
-                    
-                        <a class="dropdown-item" href="utah/app/reports/dailySheetCrew.php">
-                            Daily Sheet Crew List</a>
-                        <a class="dropdown-item" href="utah/app/reports/sundrySheetReport.php">
-                            Daily Sheet Sundries</a>
-                        <a class="dropdown-item" href="utah/app/reports/timeCardsSearch.php">
-                            Daily Job Time Sheets</a>
+                    <a class="dropdown-item" href="utah/app/reports/dailySheetReport.php">
+                        Daily Sheet Report</a>
+
+                    <a class="dropdown-item" href="utah/app/reports/dailySheetCrew.php">
+                        Daily Sheet Crew List</a>
+                    <a class="dropdown-item" href="utah/app/reports/sundrySheetReport.php">
+                        Daily Sheet Sundries</a>
+                    <a class="dropdown-item" href="utah/app/reports/timeCardsSearch.php">
+                        Daily Job Time Sheets</a>
                     <div class="dropdown-divider"></div>
 
-                        <a class="dropdown-item" href="utah/app/reports/multipleJobDateChange.php">
-                            Job Re-scheduler</a>
-                   
+                    <a class="dropdown-item" href="utah/app/reports/multipleJobDateChange.php">
+                        Job Re-scheduler</a>
+
                     <div class="dropdown-divider"></div>
                     <!--old-->
                     <!--							<li><a href="utah/app/reports/sundryRestock.php">
 							Sundry Order Report</a></li>-->
-                        <a class="dropdown-item" href="utah/app/reports/sundryIndex.php">
-                            Sundry Order Report</a>
-                        <a class="dropdown-item" href="utah/app/reports/sundryOrderFulfill.php">
-                            SHOP Sundry Order Report</a>
-                        <a class="dropdown-item" href="utah/app/reports/timecard/timeSheetReport.php">
-                            Time Sheet Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/qcSheetReport.php">
-                                QC Sheet Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/departmentWageReport.php">
-                                Department Wage Comparison</a>
-                        <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="utah/app/reports/jobMilestoneReport.php">
-                                Job Milestone Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/billingSheetIndex.php">
-                                Billing Sheet Report</a>
-                   
-                        <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="utah/app/reports/vpo_report.php">
-                                VPO Request Report</a>
-                   
-                        <!-- <?} -->
-                        <!-- if($role==4||$role==6){ //display sundry order form for shop -->
-                        <!-- ?> -->
-                        
-                            <a class="dropdown-item" href="utah/app/reports/dailySheetCrew.php">
-                                Daily Sheet Crew List</a>
-                            <a class="dropdown-item" href="utah/app/reports/sundryIndex.php">
-                                Sundry Order Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/sundryOrderFulfill.php">
-                                SHOP Sundry Order Report</a>
-                        <!-- <?}?> -->
+                    <a class="dropdown-item" href="utah/app/reports/sundryIndex.php">
+                        Sundry Order Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/sundryOrderFulfill.php">
+                        SHOP Sundry Order Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/timecard/timeSheetReport.php">
+                        Time Sheet Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/qcSheetReport.php">
+                        QC Sheet Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/departmentWageReport.php">
+                        Department Wage Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="utah/app/reports/jobMilestoneReport.php">
+                        Job Milestone Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/billingSheetIndex.php">
+                        Billing Sheet Report</a>
 
-                        
-                            <a class="dropdown-item" href="utah/app/reports/po_report.php">
-                                Purchase Order Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/poProductUsageReport.php">
-                                PO Product Usage Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/laborerPayHistory.php">
-                                Laborer Pay History Report</a>
-                            <a class="dropdown-item" href="utah/app/reports/jobApplications.php">
-                                Job Applications</a>
-                            <a class="dropdown-item" href="utah/app/reports/jobHistoryReport.php">
-                                Employee Work History</a>
-                            </div>
-                
-                </li>
-                <!--Content Management-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarContentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Content Management
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarContentDropdown">
-                        <li>
-                            <a class="dropdown-item" href="utah/app/user/empsIndex.php">
-                                Employee Management</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/foremanSundries.php">
-                                Manage Foreman Sundries</a>
-                        </li>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="utah/app/reports/vpo_report.php">
+                        VPO Request Report</a>
 
-                        <!-- <?if($role<3){?> -->
-                        <!--No point in having users create job statuses-->
-                        <!--							<li><a href="utah/app/misc/job_status.php">
+                    <!-- <?} -->
+                    <!-- if($role==4||$role==6){ //display sundry order form for shop -->
+                    <!-- ?> -->
+
+                    <a class="dropdown-item" href="utah/app/reports/dailySheetCrew.php">
+                        Daily Sheet Crew List</a>
+                    <a class="dropdown-item" href="utah/app/reports/sundryIndex.php">
+                        Sundry Order Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/sundryOrderFulfill.php">
+                        SHOP Sundry Order Report</a>
+                    <!-- <?}?> -->
+
+
+                    <a class="dropdown-item" href="utah/app/reports/po_report.php">
+                        Purchase Order Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/poProductUsageReport.php">
+                        PO Product Usage Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/laborerPayHistory.php">
+                        Laborer Pay History Report</a>
+                    <a class="dropdown-item" href="utah/app/reports/jobApplications.php">
+                        Job Applications</a>
+                    <a class="dropdown-item" href="utah/app/reports/jobHistoryReport.php">
+                        Employee Work History</a>
+                </div>
+
+            </li>
+            <!--Content Management-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarContentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Content Management
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarContentDropdown">
+                    <li>
+                        <a class="dropdown-item" href="utah/app/user/empsIndex.php">
+                            Employee Management</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/foremanSundries.php">
+                            Manage Foreman Sundries</a>
+                    </li>
+
+                    <!-- <?if($role<3){?> -->
+                    <!--No point in having users create job statuses-->
+                    <!--							<li><a href="utah/app/misc/job_status.php">
 									Add/Edit Job Statuses</a></li>-->
 
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/regions.php">
-                                Add/Edit Regions</a>
-                        </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/regions.php">
+                            Add/Edit Regions</a>
+                    </li>
 
-                        <li class="divider"></li>
-                        <!--NEW-->
+                    <li class="divider"></li>
+                    <!--NEW-->
 
-                        <!--OLD-->
-                        <!-- li><a href="utah/app/user/userList.php">
+                    <!--OLD-->
+                    <!-- li><a href="utah/app/user/userList.php">
 									Employee Management</a></li -->
 
-                        <li>
-                            <a class="dropdown-item" class="dropdown-item" class="dropdown-item" href="utah/app/user/crew_manage.php">
-                                Crew Assignment</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" class="dropdown-item" href="utah/app/timeoff/index.php">
-                                Employee Time Off Calendar</a>
-                        </li>
-                        <!-- <?if($role<3){?> -->
-                        <li>
-                            <a class="dropdown-item" href="utah/app/user/site_access.php">
-                                Site Access Management</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/systemAlert.php">
-                                System Alert Management</a>
-                        </li>
-                        <!-- <?}?> -->
-                        <li class="divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/builder/builderAdd.php">
-                                Add New Builder</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/builder/buildersHome.php">
-                                View/Edit Builders</a>
-                        </li>
+                    <li>
+                        <a class="dropdown-item" class="dropdown-item" class="dropdown-item" href="utah/app/user/crew_manage.php">
+                            Crew Assignment</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" class="dropdown-item" href="utah/app/timeoff/index.php">
+                            Employee Time Off Calendar</a>
+                    </li>
+                    <!-- <?if($role<3){?> -->
+                    <li>
+                        <a class="dropdown-item" href="utah/app/user/site_access.php">
+                            Site Access Management</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/systemAlert.php">
+                            System Alert Management</a>
+                    </li>
+                    <!-- <?}?> -->
+                    <li class="divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/builder/builderAdd.php">
+                            Add New Builder</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/builder/buildersHome.php">
+                            View/Edit Builders</a>
+                    </li>
 
-                        <li>
-                            <a class="dropdown-item" href="utah/app/supplier/index.php">
-                                Supplier Management</a>
-                        </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/supplier/index.php">
+                            Supplier Management</a>
+                    </li>
 
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/poProducts.php">
-                                Purchase Order Products</a>
-                        </li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/poProducts.php">
+                            Purchase Order Products</a>
+                    </li>
 
-                        <li class="divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/logViewer.php">
-                                Log Viewer</a>
-                        </li>
-                        <!--<li><a href="utah/app/sundry_inventory/index.php">Sundry Inventory</a></li>-->
-                        <li>
-                            <a class="dropdown-item" href="utah/app/fleet/index.php">
-                                Fleet Management</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="utah/app/misc/foremanPortalView.php">Foreman Portal</a>
-                        </li>
-                        <!-- <? -->
-                        <!-- //only Idaho for now. -->
-                        <!-- if(strpos($_SERVER['HTTP_HOST'],'idaho')!==false){?> -->
-                        <li>
-                            <a class="dropdown-item" href="utah/dms/" target="_blank">Document Library</a>
-                        </li>
-                        <!-- <?}?> -->
-                        <!-- <?}?> -->
+                    <li class="divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/logViewer.php">
+                            Log Viewer</a>
+                    </li>
+                    <!--<li><a href="utah/app/sundry_inventory/index.php">Sundry Inventory</a></li>-->
+                    <li>
+                        <a class="dropdown-item" href="utah/app/fleet/index.php">
+                            Fleet Management</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="utah/app/misc/foremanPortalView.php">Foreman Portal</a>
+                    </li>
+                    <!-- <? -->
+                    <!-- //only Idaho for now. -->
+                    <!-- if(strpos($_SERVER['HTTP_HOST'],'idaho')!==false){?> -->
+                    <li>
+                        <a class="dropdown-item" href="utah/dms/" target="_blank">Document Library</a>
+                    </li>
+                    <!-- <?}?> -->
+                    <!-- <?}?> -->
 
-                        <!-- <? -->
-                        <!-- //msds management for utah only -->
-                        <!-- if(strpos($_SERVER['HTTP_HOST'],'idaho')===false && ($role<3 or $role==6)){?> -->
-                        <li>
-                            <a class="dropdown-item" href="utah/app/msds/index.php">MSDS/TDS Management</a>
-                        </li>
-                        <!-- <?}?> -->
-                    </ul>
-                </li>
-                <!--My info-->
-                <!-- <?if($role<3 || $role == 6){?> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="utah/app/user/myInfo.php">My Info</a>
-                </li>
-                <!-- <? }?> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="utah/app/help/index.php">Help</a>
-                </li>
+                    <!-- <? -->
+                    <!-- //msds management for utah only -->
+                    <!-- if(strpos($_SERVER['HTTP_HOST'],'idaho')===false && ($role<3 or $role==6)){?> -->
+                    <li>
+                        <a class="dropdown-item" href="utah/app/msds/index.php">MSDS/TDS Management</a>
+                    </li>
+                    <!-- <?}?> -->
+                </ul>
+            </li>
+            <!--My info-->
+            <!-- <?if($role<3 || $role == 6){?> -->
+            <li class="nav-item">
+                <a class="nav-link" href="utah/app/user/myInfo.php">My Info</a>
+            </li>
+            <!-- <? }?> -->
+            <li class="nav-item">
+                <a class="nav-link" href="utah/app/help/index.php">Help</a>
+            </li>
 
         </ul>
-        <ul class="nav-item navbar-right">
-            <li>
-                <a href="utah/app/logout.php">Logout</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="utah/app/logout.php">Logout</a>
             </li>
         </ul>
 
     </div>
 </nav>
-<!-- <div style="padding-top: 60px;" class="noprint-block"></div>
 
-
-<div class="footer noprint-block">
-    <span id="date"></span>&nbsp;
-    <span id="time"></span>
-</div> -->
-
-
-
-<!-- <div class='main-nav'>
-    <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' [routerLink]="['/home']">PetersenPainting.Web</a>
-        </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse'>
-            <ul class='nav navbar-nav'>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
-            </ul>
-        </div>
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <div class="date-display">
+        {{today | date: 'EEEE LLLL d y h:mm a'}}
     </div>
-</div> -->
-
-<nav class="navbar fixed-bottom navbar-light bg-light">
-    <a class="navbar-brand" href="#">Fixed bottom</a>
 </nav>

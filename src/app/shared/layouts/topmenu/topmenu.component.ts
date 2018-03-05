@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: './topmenu.component.html',
     styleUrls: ['./topmenu.component.scss']
 })
+
 export class TopMenuComponent {
+    today = new Date();
 }
