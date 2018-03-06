@@ -11,6 +11,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { TopMenuComponent } from './shared/layouts/topmenu/topmenu.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
 
+import { ApiInterceptors } from './core/api-client/api-interceptors';
+import { JobsService } from './shared/jobs/jobs-service';
+import { PetersenPaintingResource } from './core/api-client/petersenpainting-resources';
+import { ConfigService } from './core/config/config-service';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -24,6 +29,12 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
         HomeComponent,
         TopMenuComponent,
         CalendarComponent
+    ],
+    providers: [
+        ConfigService,
+        ApiInterceptors,
+        PetersenPaintingResource,
+        JobsService
     ],
     bootstrap: [
         AppComponent

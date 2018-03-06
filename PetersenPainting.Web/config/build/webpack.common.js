@@ -41,7 +41,11 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|otf|ttf|eot|ico)$/,
                 use: 'file-loader?name=assets/[name].[hash].[ext]'
-            }
+            },
+            {
+                test: /\.json$/,
+                loaders: ["json-loader"]
+              },
         ]
     },
 

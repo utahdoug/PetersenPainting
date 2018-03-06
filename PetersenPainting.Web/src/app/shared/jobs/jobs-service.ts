@@ -15,7 +15,7 @@ export class JobsService {
      }
 
     getJobsForMonth(searchDate: Date) {
-        this.resource.post(`jobs/getJobsForMonth`,searchDate)
+        this.resource.post(`jobs/jobsByMonth`, '2018-03-02')
             .subscribe((d: IJobsPerMonthViewModel) => {
                 this.jobsPerMonthSubject.next(d);
             });

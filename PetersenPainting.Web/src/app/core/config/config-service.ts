@@ -29,17 +29,17 @@ export class ConfigService {
     }
 
     load() {
-        // return new Promise((resolve, reject) => {
-        //     this.http.get('api/config/settings')
-        //         .map((res: Response) => res.json())
-        //         .subscribe(
-        //         (data: PetersenPaintingSettings) => {
+        return new Promise((resolve, reject) => {
+            this.http.get('api/config/settings')
+                .map((res: Response) => res.json())
+                .subscribe(
+                (data: PetersenPaintingSettings) => {
 
-        //             this.settings = data;
-        //             resolve(true);
-        //         },
-        //         err => console.error(err)
-        //         );
-        // });
+                    this.settings = data;
+                    resolve(true);
+                },
+                err => console.error(err)
+                );
+        });
     }
 }

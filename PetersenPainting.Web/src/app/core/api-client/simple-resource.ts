@@ -2,6 +2,7 @@ import { Http, URLSearchParams, RequestMethod, RequestOptionsArgs, Headers } fro
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
 import { ApiInterceptors } from '../api-client/api-interceptors';
+const config = require('../../../../config/config.json');
 
 import 'rxjs/add/operator/map';
 
@@ -18,6 +19,7 @@ export interface ISimpleResourceRequestOptionsArgs extends RequestOptionsArgs {
 @Injectable()
 export class SimpleResource {
     url: string;
+    private config:any = config;
 
     constructor(private http: Http, private interceptors: ApiInterceptors) {
     }
@@ -25,6 +27,7 @@ export class SimpleResource {
     path(...urlParts: UrlPart[]): SimpleResource {
         const newResource = new SimpleResource(this.http, this.interceptors);
         newResource.url = this.combineUrlPartsWithCurrentUrl(urlParts);
+
         return newResource;
     }
 
@@ -42,7 +45,7 @@ export class SimpleResource {
                     })
             };
 
-        const requestUrl = url != null ? `${this.url}/${url}` : this.url;
+        const requestUrl = this.config.ApiUrl + (url != null ? `${this.url}/${url}` : this.url);
 
         if (data != null) {
             requestArgs.body = JSON.stringify(data);
@@ -58,7 +61,7 @@ export class SimpleResource {
         }
 
         this.interceptors.interceptRequest(requestArgs);
-
+  console.log(requestUrl);
         const response = this.http.request(requestUrl, requestArgs);
         if (!response) {
             throw `Serious failure to issue {method} to {requestUrl}, problem in a test?`;
@@ -88,7 +91,7 @@ export class SimpleResource {
             });
     }
 
-    post<T>(url?: string, data: any = null, searchParams?: {}, suppressBusy: boolean = false): Observable<T> {
+    post<T>(url?: string, data: any = null, searchParams?: {}, suppressBusy: boolean = false): Observable<T> {        
         return this.makeRequest<T>(RequestMethod.Post,
             url,
             data,

@@ -8,6 +8,6 @@ import { ConfigService, PetersenPaintingSettings } from '../config/config-servic
 export class PetersenPaintingResource extends SimpleResource {
     constructor(http: Http, interceptors: ApiInterceptors, config: ConfigService) {
         super(http, interceptors);
-        this.url = PetersenPainting.Urls.portalUrl;
+        this.url = '';//  PetersenPainting.Urls.portalUrl;
     }
 }
