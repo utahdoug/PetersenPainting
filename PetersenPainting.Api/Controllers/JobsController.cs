@@ -7,9 +7,9 @@ using PetersenPainting.Api.Models;
 
 namespace PetersenPainting.Api.Controllers
 {
-    public class ScheduleController : Controller
+    public class JobsController : Controller
     {
-        [Route("api/schedule/jobsbymonth")]
+        [Route("api/jobs/jobsbymonth")]
         [HttpPost]
         public IEnumerable<JobsByDay> JobsByMonth([FromBody] string dateToSearch)
         {
