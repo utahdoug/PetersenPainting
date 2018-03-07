@@ -21,7 +21,7 @@ namespace PetersenPainting.Api.Models
             return new MySqlConnection(ConnectionString);
         }
 
-        public List<JobsByDay> GetJobsForMonth(string jobDate)
+        public JobsByMonth GetJobsForMonth(string jobDate)
         {
             var list = new List<JobsByDay>();
 
@@ -52,7 +52,7 @@ namespace PetersenPainting.Api.Models
                     }
                 }
             }
-            return list;
+            return new JobsByMonth() {Jobs = list};
         }
     }
 }

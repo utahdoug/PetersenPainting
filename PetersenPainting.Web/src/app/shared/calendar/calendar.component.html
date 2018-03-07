@@ -24,29 +24,23 @@
         <div class="clearfix"></div>
     </div>
 
-    <table class="table-bordered" style="width: 100%;">
-        <tr>
-            <th class="cal-day-width">Sun</th>
-            <th class="cal-day-width">Mon</th>
-            <th class="cal-day-width">Tue</th>
-            <th class="cal-day-width">Wed</th>
-            <th class="cal-day-width">Thu</th>
-            <th class="cal-day-width">Fri</th>
-            <th class="cal-day-width">Sat</th>
-        </tr>
-        <!-- <tr ng-repeat="weeks in calendar">
-            <td ng-repeat="day in weeks" style="max-width: 150px;">
-                <div class="background-warning text-bold">{{day.day}}</div>
+    <!--  <span style="cursor: pointer;" ng-click="goToJob(day.keyDate, $index)">{{t.department_name}} tasks: ({{t.cnt}})</span> -->
 
-                <div ng-if="day.day>0" style="overflow: auto; height: 130px;">
+    <div class="cal-day-header">Sun</div>
+    <div class="cal-day-header">Mon</div>
+    <div class="cal-day-header">Tue</div>
+    <div class="cal-day-header">Wed</div>
+    <div class="cal-day-header">Thu</div>
+    <div class="cal-day-header">Fri</div>
+    <div class="cal-day-header">Sat</div>
 
-                    <div ng-repeat='t in taskCounts[day.keyDate]'>
-                        <div class="{{t.class}}">
-                            <span style="cursor: pointer;" ng-click="goToJob(day.keyDate, $index)">{{t.department_name}} tasks: ({{t.cnt}})</span>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr> -->
-    </table>
+    <div style="clear: both;"></div>
+
+    <div *ngFor="let day of schedule as days; index as i; first as isFirst" [ngClass]="{'cal-day': true, 'gray-background': !day.isCurrentMonth}">
+        <div [ngClass]="{'text-bold': true, 'background-warning': day.isCurrentMonth, 'gray-background': !day.isCurrentMonth}">
+            {{day.dayNumber}}</div>
+        <div *ngFor="let job of day.jobs as jobs; index as j" ngClass="{{job.class}}">
+            {{job.departmentName}} tasks: {{job.jobCount}}
+        </div>
+    </div>
 </div>

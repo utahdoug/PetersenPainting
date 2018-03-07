@@ -27,6 +27,8 @@ namespace PetersenPainting.Api
         {
             services.AddMvc();
             services.Add(new ServiceDescriptor(typeof(PetersenPaintingContext), new PetersenPaintingContext(Configuration.GetConnectionString("DefaultConnection"))));
+            services.AddOptions();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +38,14 @@ namespace PetersenPainting.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(policy =>
+            {
+                policy.AllowAnyOrigin();
+                policy.AllowAnyHeader();
+                policy.AllowAnyMethod();
+                policy.AllowCredentials();
+            });
 
             app.UseMvc();
         }

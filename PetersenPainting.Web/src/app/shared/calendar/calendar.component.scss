@@ -2,3 +2,19 @@
     width: 14%;
     text-align: center;
 }
+
+.cal-day-header {
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+.cal-day {
+    float: left;
+    width: 14.28%;
+    height: 130px;
+    overflow: auto;
+    border: 1px solid #dee2e6;
+}

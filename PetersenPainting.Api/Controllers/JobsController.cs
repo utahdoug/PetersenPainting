@@ -11,14 +11,14 @@ namespace PetersenPainting.Api.Controllers
     {
         [Route("api/jobs/jobsbymonth")]
         [HttpPost]
-        public IEnumerable<JobsByDay> JobsByMonth([FromBody] string dateToSearch)
+        public JobsByMonth JobsByMonth([FromBody] string dateToSearch)
         {
             if (HttpContext.RequestServices.GetService(typeof(PetersenPainting.Api.Models.PetersenPaintingContext)) is PetersenPaintingContext context)
             {
                 return context.GetJobsForMonth(dateToSearch);
             }
             {
-                return new List<JobsByDay>();
+                return new JobsByMonth() {Jobs = new List<JobsByDay>()};
             }
         }
     }

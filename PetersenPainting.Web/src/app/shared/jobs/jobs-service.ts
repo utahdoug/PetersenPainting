@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import { PetersenPaintingResource } from '../../core/api-client/petersenpainting-resources';
 import { IJobsPerDayViewModel, IJobsPerMonthViewModel } from '../../core';
 import { Observable, Subject, BehaviorSubject } from 'rxjs/Rx';
+import { Moment } from 'moment';
 
 @Injectable()
 export class JobsService {
-     private jobsPerMonthSubject: Subject<IJobsPerMonthViewModel> = new
-         BehaviorSubject<IJobsPerMonthViewModel>(null);
+      private jobsPerMonthSubject: Subject<IJobsPerMonthViewModel> = new
+          BehaviorSubject<IJobsPerMonthViewModel>(null);
 
      jobsPerMonth: Observable<IJobsPerMonthViewModel>;
 
@@ -14,10 +15,11 @@ export class JobsService {
          this.jobsPerMonth = this.jobsPerMonthSubject.publishReplay(0).refCount();
      }
 
-    getJobsForMonth(searchDate: Date) {
-        this.resource.post(`jobs/jobsByMonth`, '2018-03-02')
-            .subscribe((d: IJobsPerMonthViewModel) => {
-                this.jobsPerMonthSubject.next(d);
-            });
+    getJobsForMonth(searchDate: Moment) {
+        this.resource.post(`jobs/jobsByMonth`, searchDate.format('YYYY-MM-DD'))
+             .subscribe((d: IJobsPerMonthViewModel) => {
+
+                 this.jobsPerMonthSubject.next(d);
+             });
     }
 }
